@@ -1,4 +1,4 @@
-import app from "./app";
+import app from "./app.ts";
 // import express from "express";
 
 // const rezepte = [

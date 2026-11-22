@@ -1,4 +1,4 @@
-import { RecipeNotFoundError, ValidationError } from "./errors";
+import { RecipeNotFoundError, ValidationError } from "./errors.ts";
 
 export type Rezept = { id: number; titel: string; minuten: number; portionen: number };
 
