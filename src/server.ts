@@ -42,6 +42,15 @@ import app from "./app";
 //     zutaten: ["1 Zucchini", "2 Paprika", "500g Kartoffeln", "200g Feta", "3 EL Olivenöl", "Rosmarin"],
 //     anleitung: "Gemüse würfeln, mit Öl und Gewürzen mischen, 25 Minuten bei 200 Grad backen, dann Feta darüber bröckeln und weitere 10 Minuten backen."
 //   }
+//{
+ // "titel": "Chili sin Carne",
+  //"minuten": 35,
+  //"portionen": 4,
+  //"vegetarisch": true,
+  //"bewertung": 4.8,
+ // "zutaten": ["1 Dose Kidneybohnen", "1 Dose Mais", "1 Dose gehackte Tomaten", "1 Zwiebel", "1 Paprika", "Kreuzkümmel & Chili"],
+ // "anleitung": "Zwiebel und Paprika anbraten, Gewürze und Tomaten zugeben, Bohnen und Mais unterheben und 20 Minuten köcheln lassen."
+//}
 // ];
 
 // const app = express();
