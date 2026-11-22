@@ -39,9 +39,9 @@ export async function deleteRecipeHandler(req: Request, res: Response, next: Nex
         const id = Number(req.params.id);
         const geloescht = await deleteRecipe(id);
 
-        if (!geloescht) {
-            return res.status(404).json({ fehler: "Rezept nicht gefunden" });
-        }
+        //if (!geloescht) {
+       //     return res.status(404).json({ fehler: "Rezept nicht gefunden" });
+       // }
 
         res.status(204).send();
     } catch (err) {
