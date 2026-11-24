@@ -24,7 +24,7 @@ INSERT INTO rezepte (id, titel, minuten, portionen, vegetarisch) VALUES
 (2, 'Linsencurry mit Kokosmilch', 30, 4, TRUE),
 (3, 'Pfannkuchen', 15, 2, TRUE),
 (4, 'Ofengemüse mit Feta', 40, 3, TRUE),
-(5, 'Chili sin Carne', 35, 4, TRUE),
+(5, 'Chili sin Carne', 35, 4, TRUE)
 ON CONFLICT (id) DO NOTHING;
 
 INSERT INTO zutaten (id, name) VALUES
@@ -51,7 +51,7 @@ INSERT INTO zutaten (id, name) VALUES
 (21, 'Rosmarin'),
 (22, 'Kidneybohnen'),
 (23, 'Mais'),
-(24, 'Kreuzkümmel & Chili'),
+(24, 'Kreuzkümmel & Chili')
 ON CONFLICT (id) DO NOTHING;
 
 INSERT INTO rezept_zutaten (rezept_id, zutat_id, menge) VALUES
