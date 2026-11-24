@@ -10,7 +10,7 @@ services:
     ports:
       - "5432:5432"            # localhost:5432 -> Postgres im Container
     volumes:
-      - pgdata:/var/lib/postgresql/data   # Daten überleben down/up
+      - pgdata:/var/lib/postgresql   # Daten überleben down/up
 
 volumes:
   pgdata:
