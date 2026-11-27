@@ -2,6 +2,7 @@ import express from "express";
 import recipeRoutes from "./recipe.routes.ts";
 import { logger } from "./logger.middleware.ts";
 import { errorHandler } from "./error.middleware.ts";
+import { getPostgresPool } from "./pool.postgres";
 
 const app = express();
 app.use(express.json());
@@ -26,5 +27,9 @@ app.use((req, res) => {
 });
 
 app.use(errorHandler); //muss hinter alle Routen
+
+const pool = getPostgresPool();
+const res = await pool.query("SELECT NOW()");   // simpelste mögliche Query
+console.log("DB sagt:", res.rows[0]);           // { now: 2026-11-... }
 
 export default app;
