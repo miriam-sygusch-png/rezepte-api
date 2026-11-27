@@ -1,5 +1,5 @@
-import { getPostgresPool } from "./pool.postgres";
-import { Rezept } from "./recipe.service";
+import { getPostgresPool } from "./pool.postgres.ts";
+import { Rezept } from "./recipe.service.ts";
 
 const pool = getPostgresPool();
 

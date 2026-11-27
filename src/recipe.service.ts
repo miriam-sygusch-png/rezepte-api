@@ -4,7 +4,7 @@ import {
     getRecipeById as getByIdFromDb,
     createRecipe as createInDb,
     deleteRecipe as deleteInDb,
-} from "./recipe.repo";
+} from "./recipe.repo.ts";
 
 export type Zutat = { name: string; menge: string };
 
@@ -30,8 +30,6 @@ export async function getRecipeById(id: number): Promise<Rezept> {
 
     return rezept;
 }
-
-let naechsteId = 5;
 
 export async function createRecipe(daten: Omit<Rezept, "id">): Promise<Rezept> {
     if (!daten.titel || daten.titel.trim() === "") {
